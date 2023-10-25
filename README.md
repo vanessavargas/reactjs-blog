@@ -2,5 +2,5 @@
 
 - Criado com Vite
 - Estilização utilizando Sass
-- React-router-dom
+- SPA com react-router-dom
 

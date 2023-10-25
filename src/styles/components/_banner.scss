@@ -1,19 +1,21 @@
+@import '../abstract/variables';
+
 .banner {
     padding: 3rem 7.5rem 6.25rem;
-    background-color: var(--azul-escuro);
-    color: var(--branco);
+    background-color: $primary-color;
+    color: $light-color;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
     .presentation {
         .title {
-            font-family: var(--fonte-secundaria);
+            font-family: $secondary-font;
             font-size: 4rem;
             margin-top: 4.875rem;
             margin-bottom: 2rem;
         }
         .paragraph {
-            font-family: var(--fonte-secundaria);
+            font-family: $secondary-font;
             font-size: 1.5rem;
             line-height: 2rem;
             margin-bottom: 2rem;

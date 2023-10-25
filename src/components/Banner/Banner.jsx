@@ -1,7 +1,7 @@
-import circuloColorido from '../assets/circulo_colorido.png';
-import minhaFoto from '../assets/minha_foto.png'
+import circuloColorido from '../../assets/circulo_colorido.png';
+import minhaFoto from '../../assets/minha_foto.png'
 
-export default function Banner() {
+const Banner = () => {
     return (
         <div className="banner">
             <div className="presentation">
@@ -30,3 +30,5 @@ export default function Banner() {
         </div>
     )
 }
+
+export default Banner;
