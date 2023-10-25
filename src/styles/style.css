@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+a,
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 5rem;
+}
+
+.banner {
+  padding: 3rem 7.5rem 6.25rem;
+  background-color: var(--azul-escuro);
+  color: var(--branco);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.banner .presentation .title {
+  font-family: var(--fonte-secundaria);
+  font-size: 4rem;
+  margin-top: 4.875rem;
+  margin-bottom: 2rem;
+}
+.banner .presentation .paragraph {
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+.banner .images {
+  position: relative;
+  height: 406px;
+}
+.banner .images .circle-colored {
+  position: absolute;
+  right: 7vw;
+  bottom: 2.2vw;
+  width: 25vw;
+}
+.banner .images .my-photo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 18vw;
+  border-radius: 50%;
+}
+@media (max-width: 1100px) {
+  .banner {
+    padding: 3.5rem 1.5rem;
+  }
+  .banner .presentation .title {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+  .banner .presentation .paragraph {
+    margin-bottom: 1.5rem;
+  }
+  .banner .images {
+    height: 338px;
+  }
+  .banner .images .my-photo {
+    width: 25vw;
+  }
+  .banner .images .circle-colored {
+    right: 10vw;
+    width: 35vw;
+  }
+}
+@media (max-width: 744px) {
+  .banner {
+    padding: 2rem 1rem;
+    display: block;
+  }
+  .banner .presentation .title {
+    margin-bottom: 2rem;
+  }
+  .banner .presentation .paragraph {
+    margin-bottom: 2rem;
+  }
+  .banner .images {
+    height: 307px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .banner .images .my-photo {
+    width: 170px;
+    transform: translate(5rem, 0px);
+  }
+  .banner .images .circle-colored {
+    width: 240px;
+    transform: translate(-1.5rem, 0px);
+  }
+}/*# sourceMappingURL=style.css.map */
