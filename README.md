@@ -1,3 +1,6 @@
 # Projeto Blog
 
-Criado com Vite.
+- Criado com Vite
+- Estilização utilizando Sass
+- React-router-dom
+
