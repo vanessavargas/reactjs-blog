@@ -2,5 +2,6 @@
 
 - Criado com Vite
 - Estilização utilizando Sass
-- SPA com react-router-dom
+- SPA com react-router-dom 
+- Reaproveitando partes da aplicação com rotas aninhdas
 

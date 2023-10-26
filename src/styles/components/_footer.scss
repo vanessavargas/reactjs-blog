@@ -1,0 +1,15 @@
+@import "../abstract/variables";
+
+.footer {
+  background-color: $primary-color;
+  color: $light-color;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+
+  .trademark {
+    font-size: 2em;
+  }
+}
