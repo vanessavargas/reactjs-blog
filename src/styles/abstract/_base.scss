@@ -9,10 +9,6 @@
 html,
 body {
   font-family: $primary-font;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: minmax(0, 1fr);
-  min-height: 100vh;
 }
 
 a,
