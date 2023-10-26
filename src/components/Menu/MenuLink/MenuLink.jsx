@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 
-export default function MenuLink({ children, to }) {
+const MenuLink = ({ children, to }) => {
   const localizacao = useLocation();
 
   return (
@@ -11,4 +11,6 @@ export default function MenuLink({ children, to }) {
       {children}
     </Link>
   );
-}
+};
+
+export default MenuLink;

@@ -1,4 +1,4 @@
-@import '../abstract/variables';
+@import "../abstract/variables";
 
 .post {
   text-align: center;
@@ -7,6 +7,7 @@
   border-radius: 0px 0px 10px 10px;
   padding-bottom: 1.5rem;
   transition: transform 0.2s;
+
   .cover {
     width: 100%;
   }

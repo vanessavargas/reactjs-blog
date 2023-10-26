@@ -1,81 +1,81 @@
-@import '../abstract/variables';
+@import "../abstract/variables";
 
 .banner {
-    padding: 3rem 7.5rem 6.25rem;
-    background-color: $primary-color;
-    color: $light-color;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    gap: 40px;
+  padding: 3rem 7.5rem 6.25rem;
+  background-color: $primary-color;
+  color: $light-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+
+  .presentation {
+    flex: 1;
+    .title {
+      font-family: $secondary-font;
+      font-size: 4rem;
+      margin-top: 4.875rem;
+      margin-bottom: 2rem;
+    }
+    .paragraph {
+      font-family: $secondary-font;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .images {
+    flex: 1;
+    position: relative;
+    height: 406px;
+
+    .circle-colored {
+      position: absolute;
+      right: 7vw;
+      bottom: 2.2vw;
+      width: 25vw;
+    }
+
+    .my-photo {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 18vw;
+      border-radius: 50%;
+    }
+  }
+
+  @media (max-width: 980px) {
+    padding: 2rem 1rem;
+    flex-direction: column;
 
     .presentation {
-        flex: 1;
-        .title {
-            font-family: $secondary-font;
-            font-size: 4rem;
-            margin-top: 4.875rem;
-            margin-bottom: 2rem;
-        }
-        .paragraph {
-            font-family: $secondary-font;
-            font-size: 1.5rem;
-            line-height: 2rem;
-            margin-bottom: 2rem;
-        }
+      .title {
+        margin-bottom: 2rem;
+      }
+
+      .paragraph {
+        margin-bottom: 2rem;
+      }
     }
 
     .images {
-        flex: 1; 
-        position: relative;
-        height: 406px;
+      text-align: center;
+      height: 307px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
 
-        .circle-colored {
-            position: absolute;
-            right: 7vw;
-            bottom: 2.2vw;
-            width: 25vw;
-        }
+      .my-photo {
+        width: 200px;
+        transform: none;
+        position: static;
+      }
 
-        .my-photo {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            width: 18vw;
-            border-radius: 50%;
-        }
+      .circle-colored {
+        display: none;
+      }
     }
-
-    @media (max-width: 980px) {
-        padding: 2rem 1rem;
-        flex-direction: column;
-
-        .presentation {
-            .title {
-                margin-bottom: 2rem;
-            }
-
-            .paragraph {
-                margin-bottom: 2rem;
-            }
-        }
-
-        .images {
-            text-align: center;
-            height: 307px;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-
-            .my-photo {
-                width: 200px;
-                transform: none;
-                position: static;
-            }
-
-            .circle-colored {
-                display: none;
-            }
-        }
-    }
+  }
 }
