@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import DefaultPage from "./pages/DefaultPage";
+import Post from "./pages/Post/Post";
 
 const AppRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const AppRoutes = () => {
         <Route path="/" element={<DefaultPage />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="posts/:id" element={<Post />} />
         </Route>
 
         <Route path="*" element={<div>Página não encontrada</div>} />

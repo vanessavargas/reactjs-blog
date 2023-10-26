@@ -4,25 +4,25 @@ import minhaFoto from "../../assets/minha_foto.png";
 const Banner = () => {
   return (
     <div className="banner">
-      <div className="presentation">
-        <h1 className="title">Olá, Mundo!</h1>
+      <div className="banner__presentation">
+        <h1 className="banner__presentation-title">Olá, Mundo!</h1>
 
-        <p className="paragraph">
+        <p className="banner__presentation-paragraph">
           Boas vindas ao meu espaço pessoal! Eu sou Vanessa Vargas, Software
           Developer apaixonada pelo Front End. Aqui compartilho vários
           conhecimentos, espero que aprenda algo novo :)
         </p>
       </div>
 
-      <div className="images">
+      <div className="banner__images">
         <img
-          className="circle-colored"
+          className="banner__images-circle"
           src={circuloColorido}
           aria-hidden={true}
         />
 
         <img
-          className="my-photo"
+          className="banner__images-photo"
           src={minhaFoto}
           alt="Foto da Vanessa Vargas sorrindo"
         />
