@@ -1,6 +1,6 @@
 import ModelPost from "../../components/ModelPost";
 import fotoCapa from "../../assets/sobre_mim_capa.png";
-import fotoSobreMim from "../../assets/minha_foto.png";
+import fotoSobreMim from "../../assets/sobre_mim_gif.gif";
 
 const About = () => {
   return (
@@ -9,12 +9,12 @@ const About = () => {
 
       <img
         src={fotoSobreMim}
-        alt="Foto da Vanessa Vargas sorrindo"
+        alt="Gif de uma borboleta do gênero vanessa"
         className="about__image"
       />
 
       <p className="about__paragraph">
-        Sou Bacharel em Sistemas de Informação, com especialização em Gestão
+        Bacharel em Sistemas de Informação, especialista em Gestão
         Estratégica de Projetos e Metodologias Ágeis.
       </p>
       <p className="about__paragraph">

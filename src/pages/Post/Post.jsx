@@ -1,7 +1,10 @@
-import { useParams } from "react-router-dom";
+import { Route, Routes, useParams } from "react-router-dom";
 import posts from "../../json/posts.json";
 import ReactMarkdown from "react-markdown";
-import PostModelo from "../../components/ModelPost/ModelPost";
+import NotFound from "../NotFound";
+import ModelPost from "../../components/ModelPost";
+import DefaultPage from "../DefaultPage";
+import PostCard from "../../components/PostCard";
 
 const Post = () => {
   const parametros = useParams();
@@ -11,18 +14,44 @@ const Post = () => {
   });
 
   if (!post) {
-    return <h1>Post não encontrado...</h1>;
+    return <NotFound />;
   }
 
+  const postsRecomendados = posts
+    .filter((post) => post.id !== Number(parametros.id))
+    .sort((a, b) => b.id - a.id)
+    .slice(0, 4);
+
   return (
-    <PostModelo
-      fotoCapa={`/assets/posts/${post.id}/capa.png`}
-      titulo={post.titulo}
-    >
-      <div className="post-markdown__container">
-        <ReactMarkdown>{post.texto}</ReactMarkdown>
-      </div>
-    </PostModelo>
+    <Routes>
+      <Route path="*" element={<DefaultPage />}>
+        <Route
+          index
+          element={
+            <ModelPost
+              fotoCapa={`/assets/posts/${post.id}/capa.png`}
+              titulo={post.titulo}
+            >
+              <div className="post__markdown-container">
+                <ReactMarkdown>{post.texto}</ReactMarkdown>
+              </div>
+
+              <h2 className="post__title-other-posts">
+                Outros posts que você pode gostar:
+              </h2>
+
+              <ul className="post__posts-recommended">
+                {postsRecomendados.map((post) => (
+                  <li key={post.id}>
+                    <PostCard post={post} />
+                  </li>
+                ))}
+              </ul>
+            </ModelPost>
+          }
+        />
+      </Route>
+    </Routes>
   );
 };
 
