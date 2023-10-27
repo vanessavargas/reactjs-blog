@@ -1,13 +1,13 @@
 # Projeto Blog
 
-Este é um projeto desenvolvido em ReactJS, com base no curso "React: Desenvolvendo com React Router em JavaScript" da Alura. Foram realizadas algumas personalizações no layout. Os diferenciais em relação ao curso incluem a criação do projeto com o uso do Vite e a estilização com o pré-processador Sass. Além disso, foi adotada a metodologia BEM para padronizar a nomenclatura das classes.
+Este é um projeto desenvolvido em ReactJS, com base no curso "React: Desenvolvendo com React Router em JavaScript" da Alura. Foram realizadas algumas personalizações no layout. Os diferenciais em relação ao curso incluem a criação do projeto com o uso do Vite e a estilização com o pré-processador Sass. Além disso, foi adotada a metodologia Block Element Modifier (BEM) para padronizar a nomenclatura das classes.
 
 ## Layout
 
 <div align="center">
-
-    ![Projeto Blog](./src/assets/layout.png)
-
+    
+ ![Projeto Blog](https://github.com/vanessavargas/reactjs-blog/blob/main/src/assets/layout.png)
+    
 </div>
 
 O projeto está implantado na Netlify, e você pode visualizá-lo [aqui](https://site-blog-react.netlify.app/)
