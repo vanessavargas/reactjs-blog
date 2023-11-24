@@ -1,27 +1,27 @@
-# Projeto Blog
+# Blog Project
 
-Este é um projeto desenvolvido em ReactJS, com base no curso "React: Desenvolvendo com React Router em JavaScript" da Alura. Foram realizadas algumas personalizações no layout. Os diferenciais em relação ao curso incluem a criação do projeto com o uso do Vite e a estilização com o pré-processador Sass. Além disso, foi adotada a metodologia Block Element Modifier (BEM) para padronizar a nomenclatura das classes.
+This is a project developed in ReactJS, based on the course "React: Developing with React Router in JavaScript" from Alura. Some customizations were made to the layout. Noteworthy differences from the course include creating the project using Vite and styling with the Sass preprocessor. Additionally, the Block Element Modifier (BEM) methodology was adopted to standardize class naming.
 
 ## Layout
 
 <div align="center">
     
- ![Projeto Blog](https://github.com/vanessavargas/reactjs-blog/blob/main/src/assets/layout.png)
+ ![Blog Project](https://github.com/vanessavargas/reactjs-blog/blob/main/src/assets/layout.png)
     
 </div>
 
-O projeto está implantado na Netlify, e você pode visualizá-lo [aqui](https://site-blog-react.netlify.app/)
+The project is deployed on Netlify, and you can view it [here](https://site-blog-react.netlify.app/)
 
-### Conhecimentos trabalhados
+### Skills Applied
 
-Durante o desenvolvimento deste projeto, foram abordados os seguintes conhecimentos:
+During the development of this project, the following skills were applied:
 
-- Single Page Application (SPA) com react-router-dom;
-- Rotas aninhadas;
-- Utilização da biblioteca react-markdown para transformar texto em markdown para HTML;
-- Utilização dos hooks `useLocation`, `useParams` e `useNavigate`.
+- Single Page Application (SPA) with react-router-dom
+- Nested routes
+- Use of the react-markdown library to transform text into markdown for HTML
+- Utilization of hooks such as `useLocation`, `useParams`, and `useNavigate`.
 
 <hr>
 <div align="center">
-    Desenvolvido com ❤️ por VanessaVargas
+    Developed with ❤️ by VanessaVargas
 </div>
