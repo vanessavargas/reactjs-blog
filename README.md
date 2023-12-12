@@ -12,14 +12,28 @@ This is a project developed in ReactJS, based on the course "React: Developing w
 
 The project is deployed on Netlify, and you can view it [here](https://site-blog-react.netlify.app/)
 
-### Skills Applied
+### Key Features
+- Single Page Application (SPA): Utilized react-router-dom for seamless navigation within the application.
+- Nested Routes: Implemented nested routes for a structured and intuitive user experience.
+- Markdown Rendering: Integrated the react-markdown library to transform plain text into Markdown for HTML rendering.
+- React Hooks: Applied various hooks such as useLocation, useParams, and useNavigate for efficient state management and navigation.
 
-During the development of this project, the following skills were applied:
+### Getting Started
+- Clone the Repository:
+  ```
+  git clone https://github.com/vanessavargas/reactjs-blog.git
+  cd reactjs-blog
+  ```
+  
+- Install Dependencies:
+  ```
+  npm install
+  ```
 
-- Single Page Application (SPA) with react-router-dom
-- Nested routes
-- Use of the react-markdown library to transform text into markdown for HTML
-- Utilization of hooks such as `useLocation`, `useParams`, and `useNavigate`.
+- Run the Application:
+  ```
+  npm run dev
+  ```
 
 <hr>
 <div align="center">
