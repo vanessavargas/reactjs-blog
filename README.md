@@ -18,6 +18,120 @@ The project is deployed on Netlify, and you can view it [here](https://site-blog
 - Markdown Rendering: Integrated the react-markdown library to transform plain text into Markdown for HTML rendering.
 - React Hooks: Applied various hooks such as useLocation, useParams, and useNavigate for efficient state management and navigation.
 
+### Project Structure
+```
+├── public
+│ └── assets
+│   └── posts
+│     ├── 1
+│     |   ├── capa.png
+│     |   ├── gif-1.gif
+│     |   └── gif-2.gif
+│     ├── 2
+│     |   ├── capa.png
+│     |   ├── gif-1.gif
+│     |   └── gif-2.gif
+│     ├── 3
+│     |   ├── capa.png
+│     |   ├── gif-1.gif
+│     |   └── gif-2.gif
+│     ├── 4
+│     |   ├── capa.png
+│     |   ├── gif-1.gif
+│     |   └── gif-2.gif
+│     ├── 5
+│     |   ├── capa.png
+│     |   ├── gif-1.gif
+│     |   └── gif-2.gif
+│     ├── 6
+│     |   ├── capa.png
+│     |   ├── gif-1.gif
+│     |   └── gif-2.gif
+│     ├── 7
+│     |   ├── capa.png
+│     |   ├── gif-1.gif
+│     |   └── gif-2.gif
+│     └── 8
+│         ├── capa.png
+│         ├── gif-1.gif
+│         └── gif-2.gif
+├── src
+│  ├── assets
+│  │  ├── circulo_colorido.png
+│  │  ├── erro_404.png
+│  │  ├── layout.png
+│  │  ├── minha_foto.png
+│  │  ├── sobre_mim_capa.png
+│  │  └── sobre_mim_gif.gif
+│  ├── components
+│  |  ├── Banner
+│  │  |  ├── Banner.jsx
+│  │  |  └── index.js
+│  |  ├── Footer
+│  │  |  ├── Footer.jsx
+│  │  |  └── index.js
+│  |  ├── MainButton
+│  │  |  ├── MainButton.jsx
+│  │  |  └── index.js
+│  |  ├── Menu
+│  │  |  ├── Menu.jsx
+│  │  |  └── index.js
+│  |  ├── ModelPost
+│  │  |  ├── ModelPost.jsx
+│  │  |  └── index.js
+│  |  ├── PostCard
+│  │  |  ├── PostCard.jsx
+│  │  |  └── index.js
+│  |  └── ScrollToTop
+│  │     ├── ScrollToTop.jsx
+│  │     └── index.js
+│  ├── json
+│  │  └── posts.json
+│  ├── pages
+│  |  ├── About
+│  │  |  ├── About.jsx
+│  │  |  └── index.js
+│  |  ├── DefaultPage
+│  │  |  ├── DefaultPage.jsx
+│  │  |  └── index.js
+│  |  ├── Home
+│  │  |  ├── Home.jsx
+│  │  |  └── index.js
+│  |  ├── NotFound
+│  │  |  ├── NotFound.jsx
+│  │  |  └── index.js
+│  |  └── Post
+│  │     ├── Post.jsx
+│  │     └── index.js
+│  ├── styles
+│  |  ├── abstract
+│  │  |  ├── _base.scss
+│  │  |  └── _variables.scss
+│  |  ├── components
+│  │  |  ├── _about.scss
+│  │  |  ├── _banner.scss
+│  │  |  ├── _footer.scss
+│  │  |  ├── _home.scss
+│  │  |  ├── _main-button.scss
+│  │  |  ├── _menu-link.scss
+│  │  |  ├── _menu.scss
+│  │  |  ├── _model-post.scss
+│  │  |  ├── _not-found.scss
+│  │  |  ├── _post-card.scss
+│  │  |  └── _posts.js
+│  │  ├── style.css
+│  │  ├── style.css.map
+│  │  └── style.scss
+│  ├── main.jsx
+│  └── routes.jsx
+├── .eslintrc.cjs
+├── .gitignore
+├── README.md
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
 ### Getting Started
 - Clone the Repository:
   ```
